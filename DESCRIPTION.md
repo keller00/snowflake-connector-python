@@ -12,6 +12,7 @@ Source code is also available at: https://github.com/snowflakedb/snowflake-conne
 
   - Fixed a bug that prints error in logs for GET command on GCS
   - Added a parameter that allows users to skip file uploads to stage if file exists on stage and contents of the file match.
+  - Fixed a bug when `_prefetch_hook()` was not called before yielding results of `execute_async()`. Contribution from @Kache.
 
 - v3.0.2(March 23, 2023)
 
